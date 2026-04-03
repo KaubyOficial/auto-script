@@ -1,0 +1,24 @@
+{
+  "drive": {
+    "root_folder_id": "1sydZsMMxhmrSsck4Hmxmwn8zpY6v9rY2",
+    "credentials_path": "../credentials/rede-f-credentials.json"
+  },
+  "sheets": {
+    "spreadsheet_id": "1Va8y2pNZeF0Zj_2pachpjIK0sh6esp46Cuped16kgkg",
+    "sheet_name": "FLUXO DE PRODUÇÃO",
+    "col_title": "I",
+    "col_status": "C",
+    "col_original_doc": "I"
+  },
+  "languages": [
+    { "suffix": "AL", "assistant_id": "asst_LyEg2GuG0BqKDRExj0sqWBk4", "sheet_col": "J" },
+    { "suffix": "HL", "assistant_id": "asst_IYlEwB2kdq4hemUA77iWgdhh", "sheet_col": "K" },
+    { "suffix": "IT", "assistant_id": "asst_aY73SkXMcl4nx4eYI5PG6LMS", "sheet_col": "L" },
+    { "suffix": "ES", "assistant_id": "asst_0Ivx5dZu4DpnVIW4TQ38MwZl", "sheet_col": "M" },
+    { "suffix": "FR", "assistant_id": "asst_5TE6gQ45NIadoGToLca7ecKw",  "sheet_col": "N" },
+    { "suffix": "PT", "assistant_id": "asst_1BWZ2fA8CQE4pNgemXutieAW",  "sheet_col": "O" },
+    { "suffix": "EN", "assistant_id": "asst_yVVcD2aTLyB75lbcoKrVX1HU",  "sheet_col": "P" }
+  ],
+  "sleep_between_chapters_sec": 15,
+  "sleep_between_languages_sec": 15
+}

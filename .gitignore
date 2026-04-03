@@ -1,0 +1,12 @@
+# Credentials and secrets
+.env
+credentials/
+*.json.secret
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# SRT_FRASES submodule (managed separately)
+# SRT_FRASES/
