@@ -1,0 +1,3 @@
+[submodule "SRT_FRASES"]
+	path = SRT_FRASES
+	url = https://github.com/KaubyOficial/srt-frases.git
