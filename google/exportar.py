@@ -19,9 +19,9 @@ import os
 import sys
 import argparse
 
-# Adiciona o diretório pai ao path para importar google_api
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from google_api import create_doc, insert_text_into_doc
+# api.py está na mesma pasta
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from api import create_doc, insert_text_into_doc
 
 # ID da pasta raiz no Drive (Rede F)
 DRIVE_ROOT_FOLDER_ID = "1sydZsMMxhmrSsck4Hmxmwn8zpY6v9rY2"

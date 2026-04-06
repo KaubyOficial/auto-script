@@ -32,10 +32,10 @@ import json
 import time
 import argparse
 
-# Adiciona o diretório pai ao path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Adiciona pasta google/ ao path
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "google"))
 
-from google_api import (
+from api import (
     create_doc,
     get_doc_text,
     append_text_to_doc,
@@ -92,7 +92,7 @@ def run_pipeline(doc_id, row_number=None, idiomas_filter=None):
     text = get_doc_text(doc_id, CREDENTIALS_PATH)
 
     # Pega o título via API Drive
-    from google_api import get_drive_service
+    from api import get_drive_service
     drive = get_drive_service(CREDENTIALS_PATH)
     file_meta = drive.files().get(fileId=doc_id, fields="id,name,webViewLink,parents").execute()
     doc_title = file_meta["name"]

@@ -10,3 +10,8 @@ __pycache__/
 
 # SRT_FRASES submodule (managed separately)
 # SRT_FRASES/
+
+# Transcrições (geradas automaticamente)
+referencias/
+# Roteiros brutos (exportados para Google Docs)
+roteiros/

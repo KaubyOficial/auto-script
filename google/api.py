@@ -15,7 +15,8 @@ SCOPES = [
 ]
 
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-_DEFAULT_CREDENTIALS = os.path.join(_BASE_DIR, "credentials", "rede-f-credentials.json")
+# credentials/ permanece na raiz do projeto (um nível acima de google/)
+_DEFAULT_CREDENTIALS = os.path.join(_BASE_DIR, "..", "credentials", "rede-f-credentials.json")
 
 
 def get_credentials(credentials_path=None):

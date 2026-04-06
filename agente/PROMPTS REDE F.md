@@ -44,7 +44,7 @@ Referência de conteúdo:
 
 Nessa parte estruture apenas um outline com qual conteúdo será passado em cada parte do vídeo, contando com o tema principal e as resposta que você deu para a pesquisa inicial. E para cada parte indique quantas palavras cada segmento deve ter. 
 
-Lembre-se que o roteiro deve ser profundo e detalhado para entregar muito valor ao espectador. Ao todo ele deve ter 1800 palavras.
+Lembre-se que o roteiro deve ser profundo e detalhado para entregar muito valor ao espectador. Ao todo ele deve ter 2000 palavras.
 
 # ORIENTAÇÕES
 
