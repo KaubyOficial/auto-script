@@ -15,3 +15,6 @@ __pycache__/
 referencias/
 # Roteiros brutos (exportados para Google Docs)
 roteiros/
+
+# Dados de análise local
+analisar dados/

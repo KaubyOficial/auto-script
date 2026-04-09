@@ -19,9 +19,15 @@ _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 _DEFAULT_CREDENTIALS = os.path.join(_BASE_DIR, "..", "credentials", "rede-f-credentials.json")
 
 
-def get_credentials(credentials_path=None):
+IMPERSONATE_USER = "kaue.r02@kaubymedia.com.br"
+
+
+def get_credentials(credentials_path=None, subject=IMPERSONATE_USER):
     path = credentials_path or _DEFAULT_CREDENTIALS
-    return service_account.Credentials.from_service_account_file(path, scopes=SCOPES)
+    creds = service_account.Credentials.from_service_account_file(path, scopes=SCOPES)
+    if subject:
+        creds = creds.with_subject(subject)
+    return creds
 
 
 def get_docs_service(credentials_path=None):

@@ -2,7 +2,7 @@
 Módulo de divisão automática do roteiro em 3 partes com marcadores **.
 
 O roteiro tem capítulos separados por *
-O ** divide o roteiro em 3 blocos de tamanho mais igual possível (por caracteres),
+O ** divide o roteiro em 3 blocos de tamanho mais igual possível (por palavras),
 sempre em limite de capítulo.
 
 Exemplo:
@@ -16,6 +16,7 @@ Onde "**" representa uma entrada vazia (que ao juntar com * forma **: *\n*\n)
 def calculate_split_positions(chapters, num_parts=3):
     """
     Calcula os índices dos capítulos onde inserir o ** para dividir em num_parts partes iguais.
+    A divisão é feita por contagem de palavras (não caracteres) para maior precisão.
 
     Retorna lista de índices (0-based) APÓS os quais inserir o divisor.
     Ex: [1, 3] significa inserir ** após capítulo 1 e após capítulo 3.
@@ -23,15 +24,15 @@ def calculate_split_positions(chapters, num_parts=3):
     if len(chapters) < num_parts:
         return []
 
-    total_chars = sum(len(c) for c in chapters)
-    target_per_part = total_chars / num_parts
+    total_words = sum(len(c.split()) for c in chapters)
+    target_per_part = total_words / num_parts
 
     split_indices = []
     accumulated = 0
     splits_placed = 0
 
     for i, chapter in enumerate(chapters):
-        accumulated += len(chapter)
+        accumulated += len(chapter.split())
         # Verifica se chegamos perto do alvo desta parte
         if splits_placed < num_parts - 1:
             target = target_per_part * (splits_placed + 1)

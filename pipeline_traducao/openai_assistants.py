@@ -30,7 +30,7 @@ def get_client():
     return _client
 
 
-def translate_chapter(chapter_text, assistant_id, max_wait_sec=300):
+def translate_chapter(chapter_text, assistant_id, max_wait_sec=1200):
     """
     Envia um capítulo ao assistant e aguarda a resposta.
     Replica o comportamento do Make.com: messageAssistantAdvanced (role=user).
